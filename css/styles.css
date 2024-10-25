@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap");
+@font-face {
+  font-family: "Helvetica Neue LT Pro";
+  src: url("../HelveticaNeueLTPro-XBlkCn.otf"); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px; }
+  body header .header__container {
+    max-width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    body header .header__container img {
+      max-width: 15%; }
+    body header .header__container .bars__menu {
+      width: 34px;
+      height: 40px;
+      display: block;
+      cursor: pointer;
+      margin: auto 0;
+      position: relative;
+      z-index: 300; }
+      body header .header__container .bars__menu span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: red;
+        margin-top: 7px;
+        border-radius: 10px; }
+    body header .header__container #menu {
+      background-color: #fff;
+      position: fixed;
+      width: 91%;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      display: flex; }
+      body header .header__container #menu ul {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50%; }
+        body header .header__container #menu ul li {
+          width: 100%;
+          text-align: center;
+          height: 70px;
+          border-bottom: solid 1px #ccc;
+          display: flex; }
+          body header .header__container #menu ul li a {
+            text-decoration: none;
+            font-family: "Anek Devanagari";
+            color: #404040;
+            font-size: 1.5rem;
+            text-align: left;
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            line-height: 3rem; }
+body main .banner {
+  background: linear-gradient(#0093AB, 30%, #003E62); }
+  body main .banner .banner__container {
+    min-height: 100vh;
+    padding: 100px 15px 0 15px; }
+    body main .banner .banner__container h2 {
+      font-family: "Helvetica Neue LT Pro";
+      color: #4BC7FF;
+      font-weight: bolder;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.5rem; }
+    body main .banner .banner__container p {
+      color: #fff;
+      text-align: center;
+      font-family: "Anek Devanagari";
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      font-weight: 500; }
+    body main .banner .banner__container img {
+      width: 100%; }
+body main .intro .intro__container {
+  padding: 15px 20px; }
+  body main .intro .intro__container h2 {
+    font-family: "Helvetica Neue LT Pro";
+    color: #404040;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px; }
+  body main .intro .intro__container p {
+    color: #404040;
+    text-align: center;
+    font-family: "Anek Devanagari";
+    font-size: 18px;
+    line-height: 20px; }
+  body main .intro .intro__container img {
+    max-width: 50%;
+    margin: 15px auto;
+    display: block;
+    text-align: center; }
+body main .examined {
+  background-color: #006683;
+  color: #fff; }
+  body main .examined .examined__container {
+    padding: 15px 20px;
+    display: grid;
+    justify-self: center; }
+    body main .examined .examined__container h2 {
+      font-family: "Helvetica Neue LT Pro";
+      font-weight: bolder;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 30px;
+      margin-top: 20px; }
+    body main .examined .examined__container p {
+      text-align: center;
+      font-family: "Anek Devanagari";
+      font-size: 18px;
+      line-height: 20px;
+      margin: 0; }
+    body main .examined .examined__container img {
+      max-width: 50%;
+      margin: 15px auto;
+      display: block;
+      text-align: center; }
+    body main .examined .examined__container a {
+      display: inline-block;
+      border: none;
+      background-color: #4BC7FF;
+      color: #fff;
+      font-family: "Helvetica Neue LT Pro";
+      text-transform: uppercase;
+      text-decoration: none;
+      margin: auto;
+      text-align: center;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-size: 1.3rem;
+      margin: 20px auto 15px auto; }
+body main .humanists {
+  background-color: #F4F4F4;
+  color: #404040; }
+  body main .humanists .humanists__container {
+    display: grid;
+    padding: 15px 20px;
+    color: #404040; }
+    body main .humanists .humanists__container h2 {
+      font-family: "Helvetica Neue LT Pro";
+      color: #404040;
+      font-weight: bolder;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 30px;
+      margin-top: 20px; }
+    body main .humanists .humanists__container img {
+      max-width: 50%;
+      margin: 80px auto 5px auto;
+      display: block;
+      text-align: center;
+      animation-name: move;
+      -webkit-animation-duration: 5s;
+      animation-duration: 5s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite; }
+@keyframes move {
+  0% {
+    transform: translateY(0%); }
+  50% {
+    transform: translateY(-15%); }
+  100% {
+    ransform: translateY(0%); } }
+    body main .humanists .humanists__container .shadow {
+      display: block;
+      width: 120px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      margin: auto;
+      animation-name: jump;
+      -webkit-animation-duration: 5s;
+      animation-duration: 5s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite; }
+@keyframes jump {
+  0% {
+    scale: 1; }
+  50% {
+    scale: 0.5; }
+  100% {
+    scale: 1; } }
+    body main .humanists .humanists__container p {
+      color: #404040;
+      text-align: center;
+      font-family: "Anek Devanagari";
+      font-size: 18px;
+      line-height: 20px;
+      margin: 30px 0; }
+    body main .humanists .humanists__container a {
+      display: inline-block;
+      border: none;
+      background-color: #006683;
+      color: #fff;
+      font-family: "Helvetica Neue LT Pro";
+      text-transform: uppercase;
+      text-decoration: none;
+      margin: auto;
+      text-align: center;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-size: 1.3rem;
+      margin: 20px auto 15px auto; }
+body main .articles {
+  background-color: #fff;
+  padding-top: 1rem; }
+  body main .articles h2 {
+    text-align: center;
+    font-family: "Helvetica Neue LT Pro";
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 3rem; }
+  body main .articles .articles__container {
+    color: #404040; }
+    body main .articles .articles__container .article {
+      line-height: 1.3rem;
+      border-radius: 15px;
+      background-color: #fff;
+      box-shadow: #00000030 1px 1px 14px 2px;
+      width: 90%;
+      text-align: center;
+      overflow: hidden;
+      margin: 2rem auto;
+      height: 30rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      @media (min-width: 1024px) {
+        body main .articles .articles__container .article {
+          height: 500px; } }
+      body main .articles .articles__container .article .image__container {
+        width: 100%;
+        height: auto;
+        overflow: hidden; }
+        body main .articles .articles__container .article .image__container img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      body main .articles .articles__container .article h3 {
+        font-family: "Anek Devanagari";
+        color: #404040;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin: 0;
+        margin-top: 1.5rem; }
+      body main .articles .articles__container .article p {
+        padding: 0 1rem;
+        margin: 1rem auto;
+        color: #404040;
+        font-family: "Anek Devanagari";
+        font-size: 18px; }
+      body main .articles .articles__container .article a {
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Anek Devanagari";
+        font-weight: bolder;
+        color: #006683;
+        font-size: 1rem;
+        transition: all 0.3s;
+        width: 150px;
+        margin: 1rem auto; }
+        body main .articles .articles__container .article a:hover {
+          color: #006683;
+          background-color: #fff; }
+body main .skeptic {
+  color: #fff;
+  background-color: #006683;
+  text-align: center; }
+  body main .skeptic .skeptic__container {
+    padding: 2rem 1rem; }
+    body main .skeptic .skeptic__container .image__container {
+      width: 100%;
+      margin: 1rem auto;
+      height: 260px;
+      overflow: hidden; }
+      body main .skeptic .skeptic__container .image__container img {
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    body main .skeptic .skeptic__container h2 {
+      font-family: "Helvetica Neue LT Pro";
+      font-size: 2rem;
+      color: #4BC7FF;
+      text-transform: uppercase;
+      display: grid; }
+    body main .skeptic .skeptic__container p {
+      font-family: "Anek Devanagari";
+      line-height: 1.2rem;
+      margin: 2rem 0;
+      font-size: 1.2rem; }
+    body main .skeptic .skeptic__container a {
+      color: #fff;
+      background-color: #4BC7FF;
+      text-transform: uppercase;
+      padding: 8px 15px;
+      align-items: center;
+      font-family: "Helvetica Neue LT Pro";
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 1rem; }
+body main .quotes .quotes__container .image__container {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+  border: solid 7px #4BC7FF;
+  margin: 2rem auto; }
+  body main .quotes .quotes__container .image__container img {
+    width: 100%;
+    height: auto; }
+body main .quotes .quotes__container p {
+  text-align: center;
+  max-width: 90%;
+  margin: 0px auto 1rem auto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: "Anek Devanagari";
+  line-height: 1.2rem; }
+body main .quotes .quotes__container h4 {
+  font-weight: bolder;
+  font-family: "Anek Devanagari";
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem; }
+body main .evolution {
+  background-color: #006683;
+  color: #fff;
+  text-align: center; }
+  body main .evolution .evolution__container {
+    padding: 1rem 1rem 2rem 1rem; }
+    body main .evolution .evolution__container .image__container {
+      width: 100%;
+      margin: 1rem auto;
+      height: 260px;
+      overflow: hidden; }
+      body main .evolution .evolution__container .image__container img {
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    body main .evolution .evolution__container h2 {
+      font-family: "Helvetica Neue LT Pro";
+      font-size: 2rem;
+      color: #4BC7FF;
+      text-transform: uppercase;
+      display: grid; }
+    body main .evolution .evolution__container p {
+      font-family: "Anek Devanagari";
+      line-height: 1.2rem;
+      margin: 2rem 0;
+      font-size: 1.2rem; }
+      body main .evolution .evolution__container p span {
+        color: #4BC7FF; }
+    body main .evolution .evolution__container a {
+      color: #fff;
+      background-color: #4BC7FF;
+      text-transform: uppercase;
+      padding: 8px 15px;
+      align-items: center;
+      font-family: "Helvetica Neue LT Pro";
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 1rem; }
+body main .podcast {
+  color: #fff;
+  background-color: #404040;
+  text-align: center; }
+  body main .podcast .podcast__container {
+    width: 100%;
+    padding: 1rem; }
+    body main .podcast .podcast__container .microphone {
+      max-width: 60%;
+      margin: 0 auto; }
+    body main .podcast .podcast__container h3 {
+      text-transform: uppercase;
+      font-family: "Helvetica Neue LT Pro";
+      font-size: 2rem; }
+      body main .podcast .podcast__container h3 span {
+        color: #4BC7FF; }
+    body main .podcast .podcast__container span {
+      text-align: center;
+      display: block;
+      text-transform: uppercase;
+      font-family: "Helvetica Neue LT Pro";
+      color: #FEC367;
+      margin: 2rem 0;
+      font-size: 2rem; }
+    body main .podcast .podcast__container .play {
+      max-width: 20%;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer; }
+body main .magazine {
+  text-align: center;
+  background-color: #006683; }
+  body main .magazine .magazine__container {
+    padding: 2rem 1rem; }
+    body main .magazine .magazine__container h2 {
+      font-family: "Helvetica Neue LT Pro";
+      text-transform: uppercase;
+      color: #4BC7FF; }
+    body main .magazine .magazine__container p {
+      font-family: "Anek Devanagari";
+      color: #fff;
+      font-size: 1.2rem; }
+    body main .magazine .magazine__container img {
+      max-width: 80%;
+      border-radius: 5px;
+      margin: 1rem auto; }
+    body main .magazine .magazine__container a {
+      color: #fff;
+      background-color: #4BC7FF;
+      text-transform: uppercase;
+      padding: 8px 15px;
+      align-items: center;
+      font-family: "Helvetica Neue LT Pro";
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 2rem;
+      display: inline-block; }
+body footer {
+  color: #fff;
+  text-align: center; }
+  body footer .first__footer {
+    background-color: #333;
+    padding: 1rem 1rem 3rem 1rem; }
+    body footer .first__footer img {
+      max-width: 60%;
+      margin: 2rem auto;
+      display: block; }
+    body footer .first__footer span {
+      font-family: "Helvetica Neue LT Pro";
+      text-transform: uppercase;
+      font-size: 1.5rem; }
+    body footer .first__footer hr {
+      max-width: 90%;
+      margin: auto; }
+    body footer .first__footer .mail {
+      margin-top: 1rem; }
+      body footer .first__footer .mail .fa-regular {
+        font-size: 2rem;
+        position: relative;
+        top: 3px;
+        left: -5px; }
+      body footer .first__footer .mail span {
+        text-transform: lowercase;
+        font-weight: 100; }
+    body footer .first__footer a {
+      text-decoration: none;
+      color: #fff; }
+      body footer .first__footer a::before {
+        margin: 1rem;
+        font-size: 1.5rem;
+        position: relative;
+        top: 1rem; }
+  body footer .second__footer {
+    background-color: #222;
+    padding: 1rem 0; }
+    body footer .second__footer span {
+      font-family: "Helvetica Neue LT Pro";
+      text-transform: uppercase; }
+body #button-up {
+  position: fixed;
+  color: #fff;
+  background-color: #0093AB;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  font-size: 2rem;
+  transition: transform 0.3s;
+  transform: scale(1); }
+  @media (min-width: 1024px) {
+    body #button-up {
+      font-size: 2rem;
+      bottom: 2rem;
+      left: 3rem; }
+      body #button-up:hover {
+        transform: scale(0); } }
+
+/*# sourceMappingURL=styles.css.map */
